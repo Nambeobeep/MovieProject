@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Đăng ký</title>
+    <link rel="stylesheet" href="netflix-style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <!-- Netflix Logo -->
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="netflix-logo">
+        </div>
+
+        <!-- Signup Form -->
+        <div class="signup-form-container">
+            <form class="signup-form" id="signupForm">
+                <h1>Đăng ký</h1>
+                
+                <div class="form-group">
+                    <input type="text" id="fullName" placeholder="Họ và tên" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Số điện thoại">
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Mật khẩu" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" placeholder="Xác nhận mật khẩu" required>
+                </div>
+                
+                <div class="password-requirements">
+                    <h4>Mật khẩu phải có:</h4>
+                    <ul>
+                        <li id="req-length">Ít nhất 6 ký tự</li>
+                        <li id="req-upper">Ít nhất 1 chữ hoa</li>
+                        <li id="req-lower">Ít nhất 1 chữ thường</li>
+                        <li id="req-number">Ít nhất 1 số</li>
+                    </ul>
+                </div>
+                
+                <div class="form-group">
+                    <select id="country" required>
+                        <option value="">Chọn quốc gia</option>
+                        <option value="VN">Việt Nam</option>
+                        <option value="US">Hoa Kỳ</option>
+                        <option value="UK">Vương quốc Anh</option>
+                        <option value="JP">Nhật Bản</option>
+                        <option value="KR">Hàn Quốc</option>
+                        <option value="TH">Thái Lan</option>
+                        <option value="SG">Singapore</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="PH">Philippines</option>
+                    </select>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <span class="checkmark"></span>
+                        Tôi đồng ý với <a href="#" class="terms-link">Điều khoản sử dụng</a> và <a href="#" class="terms-link">Chính sách bảo mật</a>
+                    </label>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="newsletter">
+                        <span class="checkmark"></span>
+                        Gửi cho tôi thông tin về các chương trình khuyến mãi và sản phẩm mới
+                    </label>
+                </div>
+                
+                <button type="submit" class="signup-btn">Đăng ký</button>
+                
+                <div class="login-link">
+                    <p>Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+                </div>
+                
+                <div class="security-notice">
+                    <p>Trang này được bảo vệ bởi Google reCAPTCHA để đảm bảo bạn không phải là bot. <a href="#">Tìm hiểu thêm</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Background Images -->
+    <div class="background-overlay"></div>
+    <div class="background-images">
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1489599537393-0e374d85d308?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0c29d1b1a24?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0c29d1b1a24?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=450&fit=crop')"></div>
+    </div>
+
+    <script src="netflix-script.js"></script>
+</body>
+</html>

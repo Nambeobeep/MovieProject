@@ -1,0 +1,480 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Background Images Grid */
+.background-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.movie-poster {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.3) blur(1px);
+    transition: filter 0.3s ease;
+}
+
+.movie-poster:hover {
+    filter: brightness(0.5) blur(0.5px);
+}
+
+/* Dark Overlay */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.netflix-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Login Container */
+.login-container,
+.logout-container,
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Login Form */
+.login-form-container,
+.logout-form-container,
+.signup-form-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.login-form h1,
+.signup-form h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Form Groups */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #fff;
+    background: #444;
+}
+
+
+
+.form-group label {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    color: #888;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background: transparent;
+}
+
+/* Login Button */
+.login-btn,
+.signup-btn {
+    width: 100%;
+    padding: 16px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background: #f40612;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.checkbox-container input {
+    margin-right: 8px;
+}
+
+.forgot-password {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #fff;
+}
+
+/* Signup Link */
+.signup-link,
+.login-link {
+    margin-bottom: 20px;
+}
+
+.signup-link p,
+.login-link p {
+    color: #737373;
+    font-size: 16px;
+}
+
+.signup-link a,
+.login-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Security Notice */
+.security-notice {
+    margin-top: 20px;
+}
+
+.security-notice p {
+    color: #8c8c8c;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.security-notice a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.security-notice a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Styles */
+.logout-content {
+    text-align: center;
+}
+
+.logout-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #e50914;
+}
+
+.logout-message {
+    margin-bottom: 40px;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+    animation: pulse 2s infinite;
+}
+
+
+.logout-message p {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.logout-options {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.login-again-btn,
+.home-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-again-btn {
+    background: #e50914;
+    color: #fff;
+}
+
+.login-again-btn:hover {
+    background: #f40612;
+}
+
+.home-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.home-btn:hover {
+    background: #333;
+}
+
+.logout-info {
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.logout-info h3 {
+    color: #e50914;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.logout-info ul {
+    list-style: none;
+}
+
+.logout-info li {
+    color: #b3b3b3;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.logout-info li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Signup Specific Styles */
+.password-requirements {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.password-requirements h4 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.password-requirements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.password-requirements li {
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.password-requirements li::before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.password-requirements li.valid::before {
+    content: "✓";
+    color: #28a745;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 16px;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #fff;
+    background: #444;
+}
+
+.form-group select option {
+    background: #333;
+    color: #fff;
+}
+
+.terms-link {
+    color: #0071eb !important;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-form-container,
+    .logout-form-container,
+    .signup-form-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .logout-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .login-again-btn,
+    .home-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .background-images {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .netflix-logo {
+        height: 30px;
+    }
+    
+    .login-form h1,
+    .logout-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logout-content h1 {
+        font-size: 2rem;
+    }
+    
+    .form-group input {
+        padding: 14px;
+        font-size: 14px;
+    }
+    
+    .login-btn {
+        padding: 14px;
+        font-size: 14px;
+    }
+}
